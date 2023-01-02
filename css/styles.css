@@ -26,7 +26,7 @@ a, a:hover {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -34,17 +34,22 @@ header {
   background-color: var(--color-red);
   color: var(--text-white);
   height: 100px;
-  display: flex;
 }
 
 nav h1 {
   font-size: 18px;
+  display: flex;
 }
 
 .social-network {
   font-size: 14px;
   display: flex;
+  justify-content: right;
   align-items: center;
+}
+
+.social-network img {
+  padding: 0px 10px 0px 0px;
 }
 
 #know-our-space {
@@ -55,9 +60,8 @@ nav h1 {
 .space-title h2 {
   color: var(--text-white);
   font-size: 32px;
-  height: 44px;
+  margin: 0px 0px 40px 0px;
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 
 .space-card {
@@ -65,13 +69,14 @@ nav h1 {
   min-width: 960px;
   min-height: 127px;
   border-radius: 8px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .space-card h3 {
     font-size: 20px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .space-card p {
@@ -87,43 +92,51 @@ nav h1 {
 .modality-title {
   color: var(--text-red);
   font-size: 32px;
+  margin: 0px 0px 40px 0px;
+  padding-top: 20px;
 }
 
 .modality-card {
   background-color: var(--bg-card-modality);
   color: var(--text-white);
   border-radius: 8px;
+  min-width: 960px;
+  min-height: 106px;
+  margin: 0px 0px 20px 0px;
   display: flex;
   flex-direction: column;
 }
 
 .modality-card h3 {
     font-size: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .modality-card p {
     font-size: 14px;
+    padding: 20px;
 }
 
 footer {
   background-color: var(--footer-black);
   color: var(--text-white);
-  height: 262px;
+  min-width: 960px;
+  min-height: 262px;
   font-size: 14px;
   display: flex;
-  align-items: center;
 }
 
 .footer-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
 
 .footer-content-instagram {
   display: flex;
   align-items: center;
+  margin-top: 60px;
 }
 
 .footer-content-twitter {
@@ -131,14 +144,14 @@ footer {
   align-items: center;
 }
 
-.footer-content-instagram a {
-  padding: 0px;
+.footer-content-instagram img {
+  padding: 0px 10px 10px 0px;
 }
 
-.footer-content-twitter a {
-  padding: 0px;
+.footer-content-twitter img {
+  padding: 0px 10px 0px 0px;
 }
 
 .footer-content-data {
-  padding: 0px;
+  margin: 30px 0px 0px 0px;
 }
