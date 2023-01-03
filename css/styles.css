@@ -19,9 +19,15 @@
   font-family: "Open Sans", sans-serif;
 }
 
-a, a:hover {
+a,
+a:hover {
   color: unset;
   text-decoration: none;
+}
+
+body {
+  margin: 8px;
+  background-color: var(--bg-card-space);
 }
 
 .container {
@@ -30,21 +36,25 @@ a, a:hover {
   margin: 0 auto;
 }
 
-header {
+.page-header {
   background-color: var(--color-red);
   color: var(--text-white);
-  height: 100px;
+  max-width: 1200px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav h1 {
+.title-header {
   font-size: 18px;
-  display: flex;
+  margin-left: 120px;
 }
 
 .social-network {
   font-size: 14px;
+  margin-right: 120px;
   display: flex;
-  justify-content: right;
   align-items: center;
 }
 
@@ -54,76 +64,87 @@ nav h1 {
 
 #know-our-space {
   background-color: var(--bg-dark-blue);
-  height: 418px;
+  max-width: 1200px;
+  min-height: 418px;
+  padding-bottom: 40px;
 }
 
-.space-title h2 {
+.space-title {
   color: var(--text-white);
   font-size: 32px;
-  margin: 0px 0px 40px 0px;
+  margin-left: 120px;
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .space-card {
   background-color: var(--bg-card-space);
-  min-width: 960px;
+  max-width: 960px;
   min-height: 127px;
   border-radius: 8px;
+  margin-left: 120px;
+  margin-right: 120px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .space-card h3 {
-    font-size: 20px;
-    padding: 20px 20px 0px 20px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .space-card p {
-    font-size: 14px;
-    padding: 20px;
+  font-size: 14px;
+  padding: 20px;
 }
 
 #modality {
   background-color: var(--bg-white);
-  height: 880px;
+  max-width: 1200px;
+  min-height: 880px;
+  padding-bottom: 40px;
 }
 
 .modality-title {
   color: var(--text-red);
   font-size: 32px;
-  margin: 0px 0px 40px 0px;
+  margin-left: 120px;
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 
 .modality-card {
   background-color: var(--bg-card-modality);
   color: var(--text-white);
   border-radius: 8px;
-  min-width: 960px;
+  max-width: 960px;
   min-height: 106px;
-  margin: 0px 0px 20px 0px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .modality-card h3 {
-    font-size: 20px;
-    padding: 20px 20px 0px 20px;
+  font-size: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .modality-card p {
-    font-size: 14px;
-    padding: 20px;
+  font-size: 14px;
+  padding: 20px;
 }
 
 footer {
   background-color: var(--footer-black);
   color: var(--text-white);
-  min-width: 960px;
+  max-width: 1200px;
   min-height: 262px;
   font-size: 14px;
-  display: flex;
 }
 
 .footer-content {
@@ -134,9 +155,13 @@ footer {
 }
 
 .footer-content-instagram {
+  margin-top: 60px;
   display: flex;
   align-items: center;
-  margin-top: 60px;
+}
+
+.footer-content-instagram a {
+  margin-left: 10px;
 }
 
 .footer-content-twitter {
@@ -144,14 +169,14 @@ footer {
   align-items: center;
 }
 
-.footer-content-instagram img {
-  padding: 0px 10px 10px 0px;
+.footer-content-twitter img {
+  margin-top: 10px;
 }
 
-.footer-content-twitter img {
-  padding: 0px 10px 0px 0px;
+.footer-content-twitter a {
+  margin-left: 10px;
 }
 
 .footer-content-data {
-  margin: 30px 0px 0px 0px;
+  margin-top: 30px;
 }
