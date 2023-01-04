@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --color-red: #f03c42;
+  --color-blue: #222374;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-gray: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+header {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+nav h1 {
+  font-size: 18px;
+}
+
+section {
+  padding: 20px;
+}
+
+#rooms {
+  background-color: var(--color-blue);
+}
+
+#sports {
+  background-color: var(--color-white);
+}
+
+#rooms h2 {
+  color: var(--color-white);
+}
+
+#sports h2 {
+  color: var(--color-red);
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-container img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.card-gray {
+  background-color: var(--color-light-gray);
+  color: var(--color-black);
+}
+
+.card-blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 60px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
